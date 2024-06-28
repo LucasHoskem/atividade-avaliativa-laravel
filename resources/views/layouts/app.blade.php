@@ -49,15 +49,41 @@
 
         @media(max-width: 450px){
             header {
-            gap: 1rem;
-            color: green;
-            font-size: .7rem;
-        }
+                gap: 1rem;
+                color: green;
+                font-size: .7rem;
+                justify-content: center;
+            }
 
-        header > ul {
-            justify-content: center;
-            width: 100%;
+            header > ul {
+                justify-content: center;
+                width: 100%;
+            }
+
+        
         }
+        @media(min-width: 450px){
+            header {
+                gap: 1rem;
+                color: green;
+                font-size: .9rem;
+            }
+
+            header > ul {
+                width: 100%;
+            }
+
+        }
+        @media(min-width: 768px){
+            header {
+                gap: 1rem;
+                color: green;
+                font-size: 1rem;
+            }
+
+            header > ul {
+                width: 100%;
+            }
 
         
         }
@@ -70,7 +96,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="{{route("home")}}">AVIÕES</a></h1>
+        <h1><a>AVIÕES</a></h1>
         <ul>
             <li><a href="{{route("home")}}">Home</a></li>
             <li><a href="{{route("page", 1)}}">Produtos</a></li>
